@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+</head>
+<body>
+    <h1>Math Object in JavaScript</h1>
+    <p id="para"></p>
+
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("The value of pi is:", m.PI);
+        console.log("2 to the power 5 is:", m.pow(2, 5));
+        console.log("Square root of 36 is: ", m.sqrt(36));
+        console.log("Square root of 50 is: ", m.sqrt(50));
+        console.log("The value of sin(pi/2) is: ", m.sin(m.PI/2));
+
+        // Generating a random number //
+        let r = m.random(); // generates a random number between 0 and 1 inclusive.
+        console.log("The random number is ",r);
+
+        // to generate a random number between a and b => a + (b - a)*m.random() //
+    </script>
+</body>
+</html>

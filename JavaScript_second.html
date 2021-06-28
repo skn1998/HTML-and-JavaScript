@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JavaScript</title>
+    <script>
+        var name = "Saurav";
+        var surname = 'Nishant';
+        var single = "cat";
+        var plural = "cat's";
+        console.log("Plural of", single, "is", plural + ".");
+        var temp = `Plural of ${single} is ${plural}.`;
+        console.log(temp);
+        console.log(name.charAt(3));
+
+        var str = 'I am Saurav Kumar Nishant';
+        var len = str.length;
+        console.log(`Length of "${str}" is ${len}.`);
+
+        str = "His name is Saurav."
+        console.log(str.indexOf("is"), str.lastIndexOf("is"));
+
+        console.log(str.substring(4, 10)); // substring from 4 to 9
+        console.log(str.substr(4, 10)); // substring starting from index 4 and of length 10
+        var rep_str = str.replace("is", "IS"); // replaces the first occurance
+        console.log(rep_str);
+
+        var cap_str = str.toUpperCase();
+        var small_str = str.toLowerCase();
+        console.log(`${str}, ${cap_str}, ${small_str}`);
+
+        console.log("  I am not available.     ".trim()); // removes whitespaces from start and end
+    </script>
+</head>
+
+<body>
+    <h1>This is JavaScript String tutotial.</h1>
+</body>
+</html>

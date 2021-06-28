@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout in JavaScript</title>
+</head>
+<body>
+    <h1 id="time"> Time: </h1>
+    <h2>setTimeout</h4>
+    <p>Allows us to run the function only once after the given interval.</p>
+    <h2>clearTimeout</h4>
+    <p>Allows us to stop the call of the setTimeout function if not executed.</p>
+
+    <h2>setInterval</h4>
+    <p>Allows us to repeat a function after the given interval.</p>
+    <h2>clearInterval</h4>
+    <p>Allows us to stop the call of the setInterval function.</p>
+
+
+    <script>
+        function greet(name)
+        {
+            console.log("Hello", name + "!");
+        }
+
+        let id = setTimeout(greet, 5000, "Saurav"); // time in milliseconds and function name only
+        // it returns an unique id
+
+        clearTimeout(id);
+
+        let id1 = setInterval(greet, 2000, "Saurav");
+
+        clearTimeout(id1);
+
+        function display()
+        {
+            let time = document.getElementById('time');
+            let date = new Date();
+            time.innerHTML = "Time: " + date;
+        }
+        
+        setInterval(display, 1000);
+
+
+    </script>
+
+    </body>
+</html>

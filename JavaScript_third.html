@@ -1,0 +1,39 @@
+<!--
+    1. var - It has function level access i.e. once declared inside a function it can be accessed anywhere inside that function. Also we can redeclare a variable with same name as declared earlier using var.   
+    2. let - it has block level access and can not be accessed outside the block. Also we can not redeclare it inside the same block (if new block is created we can do so but it will have local access). let is same as variable type in C++.
+    3. const - to keep something constant i.e. once declared can not be changed
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditional Statements in JavScript</title>
+
+    <script>
+        var a = 10;
+        var a = 23; // this is allowed 
+        {
+            var b = 12;
+        }
+        b = b + 1; // b is accessable here too
+
+        let c = 23;
+        // let c = 24; ->not allowed
+        {
+            let c = 24;
+            c = c + 1;
+            // here value of c will be 25 as c has been declared ib this scope to be 24 
+        }
+        // here c will be 23 //
+
+        // if-else and switch are same in JavaScript as in C++ //
+
+    </script>
+</head>
+<body>
+    <h1>This is Scope and Conditional statement tutorial.</h1>
+</body>
+</html>

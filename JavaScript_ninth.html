@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Event Listeners</title>
+</head>
+<body>
+    <h1>Events and Events Listeners</h1>
+    <div>
+        <h3>Some Browser Events:</h3>
+        <ul>
+            <li>click</li>
+            <li>contextmenu</li>
+            <li>mouseover/mouseout</li>
+            <li>mousedown/mouseup</li>
+            <li>submit</li>
+            <li>focus</li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <h2>Introduction to onclick</h2>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dicta, corporis, expedita voluptate ullam commodi quam tenetur praesentium ab delectus adipisci architecto a. Dignissimos facere accusantium nemo praesentium ea. Totam eum explicabo, amet excepturi perferendis fugiat! Dolores explicabo nostrum laudantium amet assumenda! Corporis, earum iste? Nisi ut deserunt nam voluptate soluta magnam, sapiente corporis asperiores autem quibusdam nesciunt molestiae voluptas voluptatum doloremque perferendis nemo ipsum atque nihil? Molestiae, earum debitis. Nihil facere voluptatem sint, quaerat distinctio velit consectetur cumque optio natus repellendus laudantium vero eaque veritatis obcaecati facilis eveniet laboriosam debitis in deserunt labore quibusdam possimus dolorum odit? Sapiente, quis?</p>
+    </div>
+
+    <button id="button" onclick="hide()">Hide/Show</button>
+
+
+    <script>
+        function hide()
+        {
+            let para = document.getElementById("para");
+            let btn = document.getElementById("button"); 
+            if(para.style.display!='none')
+            {
+                para.style.display = 'none';
+            }
+            else    
+            {
+                para.style.display = 'block';
+            }
+        }
+
+        para.addEventListener('mouseover', function run()
+        {
+            console.log("Mouse inside paragraph.");
+        });
+
+        para.addEventListener('mouseout', function run()
+        {
+            console.log("Mouse outside paragraph.");
+        });
+
+    </script>
+
+</body>
+</html>

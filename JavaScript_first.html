@@ -1,0 +1,36 @@
+<!--
+We know that for web development we need HTML, CSS and JavaScript. HTML (Hyper Text Markup Language) defines the structure of the web page. CSS (Cascading Style Sheets) adds beauty to our web page. Using HTML and JavaScript we can create a good looking web page but we need JavaScript to add brain to our web page.
+
+Now the question arises how does JavaScript understand the HTML document?
+When the HTML document is loaded in the browser corresponding to that document another representation of that document is created called DOM (Document object model). In this DOM every tag in HTML is represented as an object. And these objects have attributes and methods. JavaScript can not understand the tags but it can understand these objects in the DOM. And by accessing these objects using id or class JavaScript can do manipulations. The DOM has a well defined hierarchical structure. 
+
+Document - Refers to the HTML or any other document
+Object - All the tags in HTML are represented as objects
+Model - A hierarchical tree like well defined structure
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript basics and Variables</title>
+
+    <script>
+        // this is where we write JavaScript //
+        console.log("Hello World!");
+
+        var a = 23;
+        var b = 34.21;
+        // character and string are same in JavaScript like python//
+        var c = 'c';
+        var d = "Saurav";
+        console.log(a, b, c, d);
+
+    </script>
+</head>
+<body>
+    <p>This is JavaScript tutorial.</p>
+</body>
+</html>

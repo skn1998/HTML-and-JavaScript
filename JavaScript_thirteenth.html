@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p>JSON is a text-based, language-independent data interchange format. A JSON object contains data in the form of key/value pair. The keys are strings and the values are the JSON types. Keys and values are separated by colon. Each entry (key/value pair) is separated by comma. The { (curly brace) represents the JSON object.</p>
+
+    <script>
+        let obj = {
+            name: "Saurav",
+            roll: "17CH30049",
+            cgpa: 8.59,
+            college: "IIT KGP",
+            hall: "RP",
+            places: ["Delhi", "Kota", "Muzaffarpur", "Kharagpur"],
+            status: true
+        };  
+        console.log(obj);
+
+        // converting obj to JSON string //
+        let jsonString = JSON.stringify(obj);
+        console.log(jsonString);
+        console.log(typeof(jsonString)); // string 
+
+        // we can play with this string//
+        jsonString = jsonString.replace("Saurav", "Nishant");
+        console.log(jsonString); 
+
+        // getting back /parsing the JSON string //
+        let new_obj = JSON.parse(jsonString); // takes an argument a valid JSON string //
+        console.log(new_obj); 
+    </script>
+</body>
+</html>
